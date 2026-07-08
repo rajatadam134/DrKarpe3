@@ -6060,7 +6060,7 @@ a[href="appointment.html"].btn-default:hover,
 .appointment-form .btn-default:hover::before,
 a[href="appointment.html"].btn-default:hover::before,
 .about-us-footer .btn-default:hover::before {
-    background-color: #7DCAED !important; /* Accent Light Blue circle on hover */
+    background-color: #FFFFFF !important; /* White circle on hover */
     background-image: url('../images/arrow-blue.svg') !important; /* Navy Slate arrow */
 }
 .btn-default::after,
