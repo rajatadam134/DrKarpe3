@@ -71,11 +71,19 @@
         <img src="assets/img/Just_logo.png" alt="Dr. Karpe's Clinic Logo" />
       </button>
 
-      <!-- Chatbot Window (Headerless, Spacious) -->
+      <!-- Chatbot Window (Header Panel, Spacious) -->
       <div class="chatbot-window" aria-hidden="true">
-        <!-- Slim Close Bar overlayed on top of messages -->
-        <div class="chatbot-header-slim">
-          <button class="chatbot-close" aria-label="Close support chat">&times;</button>
+        <!-- Header Panel with Avatar, Info & Close -->
+        <div class="chatbot-header">
+          <div class="cb-header-avatar">
+            <img src="assets/img/Just_logo.png" alt="Dr. Karpe Avatar" />
+            <span class="cb-online-indicator"></span>
+          </div>
+          <div class="cb-header-info">
+            <h4 class="cb-header-title">Dr. Karpe's Clinic</h4>
+            <span class="cb-header-status">Online Support</span>
+          </div>
+          <button class="chatbot-close" aria-label="Close support chat" type="button">&times;</button>
         </div>
 
         <!-- Messages stream -->
