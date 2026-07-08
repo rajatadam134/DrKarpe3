@@ -1,0 +1,23 @@
+# Windows System Files
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Template folders (not needed in production)
+Dr. Karpe_Website_Template/
+template-pages/
+
+# Temp/Log files
+*.log
+tmp/
+temp/
