@@ -258,8 +258,6 @@
             const container = document.getElementById("blog-posts-container");
             if (!container) return;
             
-            let renderedLive = false;
-            
             const renderPostsList = (postsList) => {
                 if (!postsList || postsList.length === 0) return;
                 
@@ -282,22 +280,22 @@
                     
                     return `
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="blog-item wow fadeInUp" data-wow-delay="${delay.toFixed(1)}s" style="margin-bottom: 30px; border-radius: 20px; overflow: hidden; background: var(--secondary-color); border: 1px solid var(--dark-divider-color);">
-                                <div class="post-featured-image" data-cursor-text="View" style="height: 240px; overflow: hidden;">
+                            <div class="blog-item wow fadeInUp" data-wow-delay="${delay.toFixed(1)}s">
+                                <div class="post-featured-image" data-cursor-text="View">
                                     <a href="${linkHref}" class="image-anime">
-                                        <img src="${imgUrl}" alt="${post.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                                        <img src="${imgUrl}" alt="${post.title}">
                                     </a>
                                 </div>
-                                <div class="post-item-body" style="padding: 25px;">
-                                    <div class="post-item-metadata" style="margin-bottom: 15px; font-size: 13px; font-weight: 500;">
-                                        <span style="color: var(--accent-color); margin-right: 15px;"><i class="fa-solid fa-tag"></i> ${post.category || "Oral Health"}</span>
-                                        <span style="color: var(--text-color);"><i class="fa-solid fa-calendar-days"></i> ${dateStr}</span>
+                                <div class="post-item-body">
+                                    <div class="post-item-metadata">
+                                        <span class="post-category"><i class="fa-solid fa-tag"></i> ${post.category || "Oral Health"}</span>
+                                        <span class="post-date"><i class="fa-solid fa-calendar-days"></i> ${dateStr}</span>
                                     </div>
-                                    <h2 style="font-size: 20px; font-weight: 700; margin-bottom: 12px; line-height: 1.4;"><a href="${linkHref}" style="color: var(--primary-color);">${post.title}</a></h2>
-                                    <p style="font-size: 14px; line-height: 1.6; color: var(--text-color); margin-bottom: 20px;">${post.excerpt || "Read our latest article for dental advice and clinical insights."}</p>
+                                    <h2><a href="${linkHref}">${post.title}</a></h2>
+                                    <p>${post.excerpt || "Read our latest article for dental advice and clinical insights."}</p>
                                 </div>
-                                <div class="post-item-footer" style="padding: 0 25px 25px 25px;">
-                                    <a href="${linkHref}" class="btn-default" style="padding: 8px 30px 8px 15px; font-size: 13px;">Read Article</a>
+                                <div class="post-item-footer">
+                                    <a href="${linkHref}" class="btn-default" style="padding: 8px 48px 8px 18px; font-size: 13px;">Read Article</a>
                                 </div>
                             </div>
                         </div>
@@ -307,11 +305,20 @@
             
             // Fetch from Sanity
             const livePosts = await fetchSanity(query);
-            if (livePosts && livePosts.length > 0) {
-                renderPostsList(livePosts);
-            } else {
-                renderPostsList(fallbackPosts);
-            }
+            
+            // Merge live posts and fallback posts (deduplicated by slug)
+            const combinedPosts = [...(livePosts || [])];
+            fallbackPosts.forEach(fallback => {
+                const exists = combinedPosts.some(p => p.slug && p.slug.current === fallback.slug.current);
+                if (!exists) {
+                    combinedPosts.push(fallback);
+                }
+            });
+            
+            // Sort by publication date desc
+            combinedPosts.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+            
+            renderPostsList(combinedPosts);
         });
     </script>
     <script src="js/chatbot.js"></script>
