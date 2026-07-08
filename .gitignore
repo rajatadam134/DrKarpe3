@@ -21,3 +21,12 @@ template-pages/
 *.log
 tmp/
 temp/
+
+# Demo files and screenshot assets
+*_demo.html
+*_demo.css
+css/*_demo.css
+*.png
+*.jpg
+*.jpeg
+

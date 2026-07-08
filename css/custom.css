@@ -42,13 +42,13 @@
 /************************************/	
 
 :root{
-	--primary-color			: #0E384C;
-	--secondary-color		: #EFF8FF;
+	--primary-color			: #0F2A38; /* Secondary / Text (Navy Slate) */
+	--secondary-color		: #FAFDF7; /* Background (off-white) */
 	--text-color			: #527282;
-	--accent-color			: #1E84B5;
+	--accent-color			: #8DBF3A; /* Primary Green */
 	--white-color			: #FFFFFF;
 	--divider-color			: #FFFFFF1F;
-	--dark-divider-color	: #0E384C1A;
+	--dark-divider-color	: #0F2A381A;
 	--error-color			: rgb(230, 87, 87);
 	--default-font			: "Poppins", sans-serif;
 }
@@ -747,7 +747,7 @@ header.main-header .header-sticky.active{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 0px 0px 40px 0px #0E384C1A;
+	box-shadow: 0px 0px 40px 0px #0F2A381A;
 	transition: all 0.5s ease-in-out;
 	z-index: 1;
 }
@@ -765,7 +765,7 @@ header.main-header .header-sticky.active{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 0px 0px 40px 0px #0E384C1A;
+	box-shadow: 0px 0px 40px 0px #0F2A381A;
 	transition: all 0.5s ease-in-out;
 	z-index: 1;
 }
@@ -782,7 +782,7 @@ header.main-header .header-sticky.active{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 0px 0px 40px 0px #0E384C1A;
+	box-shadow: 0px 0px 40px 0px #0F2A381A;
 	transition: all 0.5s ease-in-out;
 	z-index: 1;
 }
@@ -5988,7 +5988,7 @@ body { overflow-x: hidden; }
     .main-header .header-sticky.active .slicknav_nav li a:hover,
     .main-header .header-sticky.active .slicknav_nav .slicknav_row:hover {
         color: var(--accent-color) !important;
-        background: rgba(0, 178, 169, 0.05) !important;
+        background: rgba(141, 191, 58, 0.05) !important;
         padding: 12px 22px !important;
     }
 
@@ -6000,7 +6000,118 @@ body { overflow-x: hidden; }
         border-bottom: none !important;
     }
     .main-header .header-sticky.active .slicknav_nav li.highlighted-menu a:hover {
-        background: rgba(0, 178, 169, 0.08) !important;
+        background: rgba(141, 191, 58, 0.08) !important;
     }
+}
+
+/* ============================================================
+   THEME COLOR EXTENSIONS & CONTRAST OVERRIDES (GREEN THEME)
+   ============================================================ */
+
+/* Main Hero Heading Highlight Words ("Brighter, Healthier") - now Primary Green */
+.hero-content h1 span,
+.hero-book-appointment .hero-content h1 span {
+    color: var(--accent-color) !important; /* #8DBF3A Primary Green */
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+/* WhatsApp Circular Icon styling (True Logo Green #99C63C) */
+.whatsapp-nav-btn {
+    background-color: #99C63C !important;
+    box-shadow: 0 4px 10px rgba(153, 198, 60, 0.2) !important;
+}
+.whatsapp-nav-btn:hover {
+    background-color: #7DCAED !important; /* Subtle Light Blue Accent on hover */
+    color: #0F2A38 !important;
+    box-shadow: 0 6px 15px rgba(125, 202, 237, 0.35) !important;
+}
+
+/* Buttons (Resting): All standard buttons default to Primary Green (#8DBF3A) with white text */
+.btn-default,
+.header-btn .btn-default,
+.appointment-form .btn-default,
+a[href="appointment.html"].btn-default,
+.about-us-footer .btn-default {
+    background-color: var(--accent-color) !important; /* #8DBF3A */
+    color: #FFFFFF !important;
+    border-color: var(--accent-color) !important;
+}
+.btn-default::before,
+.header-btn .btn-default::before,
+.appointment-form .btn-default::before,
+a[href="appointment.html"].btn-default::before,
+.about-us-footer .btn-default::before {
+    background-color: #FFFFFF !important; /* White arrow circle */
+    background-image: url('../images/arrow-blue.svg') !important; /* Blue arrow */
+}
+
+/* Buttons Hover: Transition to Navy Slate (#0F2A38) with white text */
+.btn-default:hover,
+.header-btn .btn-default:hover,
+.appointment-form .btn-default:hover,
+a[href="appointment.html"].btn-default:hover,
+.about-us-footer .btn-default:hover {
+    color: #FFFFFF !important;
+    background-color: var(--primary-color) !important; /* Navy Slate */
+}
+.btn-default:hover::before,
+.header-btn .btn-default:hover::before,
+.appointment-form .btn-default:hover::before,
+a[href="appointment.html"].btn-default:hover::before,
+.about-us-footer .btn-default:hover::before {
+    background-color: #7DCAED !important; /* Accent Light Blue circle on hover */
+    background-image: url('../images/arrow-blue.svg') !important; /* Navy Slate arrow */
+}
+.btn-default::after,
+.header-btn .btn-default::after,
+.appointment-form .btn-default::after,
+a[href="appointment.html"].btn-default::after,
+.about-us-footer .btn-default::after {
+    background: var(--primary-color) !important; /* Slide-in overlay uses Navy Slate */
+}
+
+/* --- CTA Box Button inside Dark Navy Background Section --- */
+/* Resting: White background with Navy Slate text for high visibility */
+.cta-box-btn .btn-default.btn-highlighted {
+    background-color: #FFFFFF !important;
+    color: #0F2A38 !important;
+    border-color: #FFFFFF !important;
+}
+.cta-box-btn .btn-default.btn-highlighted::before {
+    background-color: var(--accent-color) !important; /* Primary Green circle */
+    background-image: url('../images/arrow-white.svg') !important; /* White arrow */
+}
+.cta-box-btn .btn-default.btn-highlighted::after {
+    background: #7DCAED !important; /* Slide-in hover overlay uses Accent Light Blue */
+}
+
+/* Hover: Transition to Accent Light Blue (#7DCAED) background with Navy Slate text */
+.cta-box-btn .btn-default.btn-highlighted:hover {
+    background-color: #7DCAED !important;
+    color: #0F2A38 !important;
+    border-color: #7DCAED !important;
+}
+.cta-box-btn .btn-default.btn-highlighted:hover::before {
+    background-color: #0F2A38 !important; /* Navy Slate circle */
+    background-image: url('../images/arrow-white.svg') !important; /* White arrow on hover */
+}
+
+/* Form inputs styling */
+.form-control,
+.appointment-form .form-control,
+select.form-control {
+    border-color: #D9E0DC !important; /* Light Gray border */
+    background-color: #FFFFFF !important;
+    color: var(--primary-color) !important;
+}
+
+/* Form input focus border - Accent Light Blue (#7DCAED) focus outline */
+.form-control:focus,
+.appointment-form .form-control:focus,
+select.form-control:focus {
+    border-color: #7DCAED !important;
+    box-shadow: 0 0 0 0.2rem rgba(125, 202, 237, 0.25) !important;
+    background-color: #FFFFFF !important;
 }
 
