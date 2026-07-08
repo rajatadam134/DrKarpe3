@@ -6083,17 +6083,17 @@ a[href="appointment.html"].btn-default::after,
     background-image: url('../images/arrow-white.svg') !important; /* White arrow */
 }
 .cta-box-btn .btn-default.btn-highlighted::after {
-    background: #7DCAED !important; /* Slide-in hover overlay uses Accent Light Blue */
+    background: #FFFFFF !important; /* Slide-in hover overlay uses White (stays white) */
 }
 
-/* Hover: Transition to Accent Light Blue (#7DCAED) background with Navy Slate text */
+/* Hover: Stays White background with Navy Slate text, circle changes to Navy Slate */
 .cta-box-btn .btn-default.btn-highlighted:hover {
-    background-color: #7DCAED !important;
+    background-color: #FFFFFF !important;
     color: #0F2A38 !important;
-    border-color: #7DCAED !important;
+    border-color: #FFFFFF !important;
 }
 .cta-box-btn .btn-default.btn-highlighted:hover::before {
-    background-color: #0F2A38 !important; /* Navy Slate circle */
+    background-color: var(--primary-color) !important; /* Navy Slate circle */
     background-image: url('../images/arrow-white.svg') !important; /* White arrow on hover */
 }
 
