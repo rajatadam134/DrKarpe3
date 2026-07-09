@@ -285,16 +285,39 @@
                     <!-- About Image Start -->
                     <div class="about-image">
                         <div class="about-img-1">
-                            <figure class="image-anime reveal">
-                                <img src="assets/img/gallery/front.jpg" alt="Dr. Karpe's Dental Clinic Entrance">
-                            </figure>
+                            <a href="assets/img/gallery/front.jpg" class="about-img-lightbox" title="Dr. Karpe's Dental Clinic Entrance" style="cursor: zoom-in; display: block;">
+                                <figure class="image-anime reveal">
+                                    <img src="assets/img/gallery/front.jpg" alt="Dr. Karpe's Dental Clinic Entrance">
+                                </figure>
+                            </a>
                         </div>
 
                         <div class="about-img-2">
-                            <figure class="image-anime reveal">
-                                <img src="assets/img/gallery/opt-area.jpg" alt="Dr. Karpe's Dental Clinic Operating Area">
-                            </figure>
+                            <a href="assets/img/gallery/opt-area.jpg" class="about-img-lightbox" title="Dr. Karpe's Dental Clinic Operating Area" style="cursor: zoom-in; display: block;">
+                                <figure class="image-anime reveal">
+                                    <img src="assets/img/gallery/opt-area.jpg" alt="Dr. Karpe's Dental Clinic Operating Area">
+                                </figure>
+                            </a>
                         </div>
+
+                        <!-- About Experience Circle Start -->
+                        <div class="about-experience">
+                            <svg class="experience-badge-svg" width="115" height="115" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                                <!-- Background Circle -->
+                                <circle cx="55" cy="55" r="48" fill="var(--primary-color)" />
+                                <!-- Text Path -->
+                                <path id="textCirclePath" d="M 55, 55 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
+                                <!-- Center Text -->
+                                <text x="55" y="62" font-size="18" font-family="'Outfit', sans-serif" font-weight="800" fill="#ffffff" text-anchor="middle">25+</text>
+                                <!-- Curved Rotating Text -->
+                                <text font-size="6.5" font-family="'Outfit', sans-serif" font-weight="700" fill="#ffffff" letter-spacing="1">
+                                    <textPath href="#textCirclePath" startOffset="0%">
+                                        25+ YEARS EXPERIENCE • 25+ YEARS EXPERIENCE •
+                                    </textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <!-- About Experience Circle End -->
                     </div>
                     <!-- About Image End -->
                 </div>

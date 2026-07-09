@@ -1198,7 +1198,8 @@ header.main-header .header-sticky.active{
 	transform: translate(-50%, 50%);
 }
 
-.about-experience img{
+.about-experience img,
+.about-experience svg{
 	animation: rotate 30s infinite linear;
 }
 
@@ -4877,8 +4878,11 @@ footer.main-footer{
         transform: translate(50px, -30px);
     }
 
-	.about-experience img{
+	.about-experience img,
+	.about-experience svg{
 		max-width: 100px;
+		width: 100px;
+		height: 100px;
 	}
 
 	.about-us-body ul{

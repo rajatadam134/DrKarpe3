@@ -308,6 +308,24 @@
 		}
 	});
 
+	/* About Image Lightbox Popup */
+	if ($('.about-image').length) {
+		$('.about-image').magnificPopup({
+			delegate: '.about-img-lightbox',
+			type: 'image',
+			gallery: {
+				enabled: true
+			},
+			zoom: {
+				enabled: true,
+				duration: 300,
+				opener: function(element) {
+					return element.find('img');
+				}
+			}
+		});
+	}
+
 	/* Contact form validation */
 	var $contactform = $("#contactForm");
 	$contactform.validator({focus: false}).on("submit", function (event) {
