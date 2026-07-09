@@ -1197,8 +1197,8 @@ header.main-header .header-sticky.active{
 	top: 80px;
 	transform: translate(-30%, -50%);
 	z-index: 10;
-	width: 115px;
-	height: 115px;
+	width: 120px;
+	height: 120px;
 }
 
 .about-experience img,
@@ -4883,14 +4883,9 @@ footer.main-footer{
         right: auto;
         bottom: 0;
         transform: translate(50px, -30px);
+        width: 100px;
+        height: 100px;
     }
-
-	.about-experience img,
-	.about-experience svg{
-		max-width: 100px;
-		width: 100px;
-		height: 100px;
-	}
 
 	.about-us-body ul{
 		display: block;
