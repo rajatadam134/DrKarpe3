@@ -1193,14 +1193,20 @@ header.main-header .header-sticky.active{
 
 .about-experience{
 	position: absolute;
-	top: 0;
-	right: 0;
-	transform: translate(-50%, 50%);
+	left: 410px;
+	top: 80px;
+	transform: translate(-30%, -50%);
+	z-index: 10;
+	width: 115px;
+	height: 115px;
 }
 
 .about-experience img,
 .about-experience svg{
 	animation: rotate 30s infinite linear;
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 
 @keyframes rotate{
@@ -4873,6 +4879,7 @@ footer.main-footer{
 	.about-experience{
         position: absolute;
         top: auto;
+        left: auto;
         right: auto;
         bottom: 0;
         transform: translate(50px, -30px);
