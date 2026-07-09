@@ -2180,8 +2180,8 @@ footer.main-footer{
 }
 
 .footer-logo img{
-	width: 100%;
-	max-width: 270px;
+	width: auto !important;
+	max-height: 50px !important;
 }
 
 .about-footer-content p{
@@ -6427,6 +6427,11 @@ select.form-control:focus {
         margin-left: 0 !important;
         margin-top: 40px;
     }
+}
+
+/* Testimonial slider overflow boundaries safeguard */
+.testimonial-slider .swiper {
+    overflow: hidden !important;
 }
 
 

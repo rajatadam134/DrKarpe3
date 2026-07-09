@@ -105,6 +105,9 @@
 			speed: 1000,
 			spaceBetween: 30,
 			loop: true,
+			roundLengths: true,
+			watchSlidesProgress: true,
+			preventInteractionOnTransition: true,
 			autoplay: {
 				delay: 3000,
 			},
