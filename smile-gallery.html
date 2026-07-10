@@ -128,13 +128,19 @@
             <!-- Gallery Filter Start -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="gallery-filter text-center" style="margin-bottom: 50px;">
-                        <button class="filter-btn active" data-filter="all" style="padding: 10px 22px; font-size: 14px; font-weight: 500; text-transform: uppercase; margin: 5px; border-radius: 30px; border: none; transition: all 0.3s;">All Cases</button>
-                        <button class="filter-btn" data-filter="smile" style="padding: 10px 22px; font-size: 14px; font-weight: 500; text-transform: uppercase; margin: 5px; border-radius: 30px; border: none; transition: all 0.3s;">Smile Makeovers</button>
-                        <button class="filter-btn" data-filter="implant" style="padding: 10px 22px; font-size: 14px; font-weight: 500; text-transform: uppercase; margin: 5px; border-radius: 30px; border: none; transition: all 0.3s;">Dental Implants</button>
-                        <button class="filter-btn" data-filter="cosmetic" style="padding: 10px 22px; font-size: 14px; font-weight: 500; text-transform: uppercase; margin: 5px; border-radius: 30px; border: none; transition: all 0.3s;">Cosmetic Fillings</button>
-                        <button class="filter-btn" data-filter="braces" style="padding: 10px 22px; font-size: 14px; font-weight: 500; text-transform: uppercase; margin: 5px; border-radius: 30px; border: none; transition: all 0.3s;">Braces / Alignment</button>
-                        <button class="filter-btn" data-filter="denture" style="padding: 10px 22px; font-size: 14px; font-weight: 500; text-transform: uppercase; margin: 5px; border-radius: 30px; border: none; transition: all 0.3s;">Dentures &amp; Crowns</button>
+                    <div class="gallery-filter-mobile-wrapper">
+                        <button class="mobile-filter-trigger">
+                            <span class="active-filter-label">Filter: All Cases</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="gallery-filter text-center">
+                        <button class="filter-btn active" data-filter="all">All Cases</button>
+                        <button class="filter-btn" data-filter="smile">Smile Makeovers</button>
+                        <button class="filter-btn" data-filter="implant">Dental Implants</button>
+                        <button class="filter-btn" data-filter="cosmetic">Cosmetic Fillings</button>
+                        <button class="filter-btn" data-filter="braces">Braces / Alignment</button>
+                        <button class="filter-btn" data-filter="denture">Dentures &amp; Crowns</button>
                     </div>
                 </div>
             </div>
@@ -1000,7 +1006,11 @@
     document.addEventListener("DOMContentLoaded", () => {
         const filterBtns = document.querySelectorAll(".filter-btn");
         const galleryItems = document.querySelectorAll(".gallery-item-wrap");
+        const mobileTrigger = document.querySelector(".mobile-filter-trigger");
+        const galleryFilter = document.querySelector(".gallery-filter");
+        const activeLabel = document.querySelector(".active-filter-label");
 
+        // Main filter execution logic
         filterBtns.forEach(btn => {
             btn.addEventListener("click", () => {
                 // Toggle active button class
@@ -1018,6 +1028,25 @@
                 });
             });
         });
+
+        // Mobile Dropdown toggler
+        if (mobileTrigger && galleryFilter) {
+            mobileTrigger.addEventListener("click", () => {
+                mobileTrigger.classList.toggle("open");
+                galleryFilter.classList.toggle("show");
+            });
+
+            // Update label and close dropdown when an option is selected on mobile
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    if (window.innerWidth <= 767) {
+                        activeLabel.textContent = "Filter: " + btn.textContent;
+                        mobileTrigger.classList.remove("open");
+                        galleryFilter.classList.remove("show");
+                    }
+                });
+            });
+        }
     });
 </script>
 </body>

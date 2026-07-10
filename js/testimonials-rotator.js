@@ -118,4 +118,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     swiperWrapper.innerHTML = html;
+
+    // Trigger swiper update after DOM layout computes to prevent slide overlap
+    setTimeout(() => {
+        const swiperEl = document.querySelector('.testimonial-slider .swiper');
+        if (swiperEl && swiperEl.swiper) {
+            swiperEl.swiper.update();
+        }
+    }, 150);
 });

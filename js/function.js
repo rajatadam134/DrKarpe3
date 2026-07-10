@@ -24,27 +24,30 @@
 			var fromTop = $(window).scrollTop();
 			setHeaderHeight();
 			
-			// Activate floating pill mode after 100px scroll
-			$("header .header-sticky").toggleClass("active", (fromTop > 100));
-			
-			// Direction-aware auto-hide behavior site-wide (5px threshold prevents jitter):
 			var delta = fromTop - lastScrollTop;
-			if (fromTop > 150 && Math.abs(delta) > 5) {
-				if (delta > 0) {
-					// Scrolling DOWN -> Hide the pill
-					$("header .header-sticky").addClass("mobile-hide");
-					// Also close mobile menu if open
-					var $nav = $('.slicknav_nav');
-					if ($nav.is(':visible')) {
-						$('.navbar-toggle .slicknav_btn').trigger('click');
+			
+			if (fromTop > 100) {
+				// Below header area -> Must be pill-shaped (active)
+				$("header .header-sticky").addClass("active");
+				
+				if (Math.abs(delta) > 5) {
+					if (delta > 0) {
+						// Scrolling DOWN -> Hide the header
+						$("header .header-sticky").addClass("mobile-hide");
+						
+						// Also close mobile menu if open
+						var $nav = $('.slicknav_nav');
+						if ($nav.is(':visible')) {
+							$('.navbar-toggle .slicknav_btn').trigger('click');
+						}
+					} else {
+						// Scrolling UP -> Reveal the header
+						$("header .header-sticky").removeClass("mobile-hide");
 					}
-				} else {
-					// Scrolling UP -> Re-appear immediately
-					$("header .header-sticky").removeClass("mobile-hide");
 				}
-			} else if (fromTop <= 150) {
-				// Near the top -> Keep visible
-				$("header .header-sticky").removeClass("mobile-hide");
+			} else {
+				// Near the top -> Show normal header and remove active state
+				$("header .header-sticky").removeClass("active").removeClass("mobile-hide");
 			}
 			
 			lastScrollTop = fromTop;
@@ -108,6 +111,8 @@
 			roundLengths: true,
 			watchSlidesProgress: true,
 			preventInteractionOnTransition: true,
+			observer: true,
+			observeParents: true,
 			autoplay: {
 				delay: 3000,
 			},
