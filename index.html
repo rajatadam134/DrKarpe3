@@ -125,10 +125,10 @@
 	<!-- Header End -->
 
     <!-- Hero Section Start -->
-	<div class="hero hero-book-appointment">
+	<div class="hero bg-image parallaxie" style="background-image: url('assets/img/New_Images/Implant_Section.jpeg');">
 		<div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <!-- Hero Content Start -->
                     <div class="hero-content">
                         <!-- Section Title Start -->
@@ -139,8 +139,14 @@
                         </div>
                         <!-- Section Title End -->
 
+                        <!-- Hero Content Body Start -->
+                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="appointment.html" class="btn-default">book appointment</a>
+                        </div>
+                        <!-- Hero Content Body End -->
+
                         <!-- Google Rating Start -->
-                        <div class="google-rating wow fadeInUp" data-wow-delay="0.5s" style="margin-top: 30px;">
+                        <div class="google-rating wow fadeInUp" data-wow-delay="0.75s">
                             <ul>
                                <li>Google Rating <span>4.9</span></li>
                                <li>
@@ -156,77 +162,6 @@
                        <!-- Google Rating End -->
                     </div>
                     <!-- Hero Content End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="appointment-form wow fadeInUp" data-wow-delay="0.25s">
-                        <div class="hero-appointment-form-title">
-                            <h2 class="text-anime-style-2"><span>Book</span> Appointment</h2>
-                            <p class="wow fadeInUp">Easily schedule your slot and open details in WhatsApp</p>
-                        </div>
-                        <!-- Form Start -->
-                        <form id="appt-form" action="#" method="POST" data-toggle="validator">
-                            <div class="row">
-                                <div class="form-group col-md-12 mb-4">
-                                    <input type="text" id="name" class="form-control" placeholder="Enter Full Name *" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="tel" id="phone" class="form-control" placeholder="10-Digit Mobile Number *" pattern="[0-9]{10}" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="email" id="email" class="form-control" placeholder="Email Address (Optional)">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <select id="branch" class="form-control form-select" required style="-webkit-appearance: listbox;">
-                                        <option value="" disabled selected>Select Branch *</option>
-                                        <option value="solapur">Solapur Main Branch (Railway Line)</option>
-                                        <option value="akkalkot">Akkalkot Branch (Kanda Bazaar)</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="date" id="date" class="form-control" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-12 mb-4">
-                                    <select id="treatment" class="form-control form-select" required style="-webkit-appearance: listbox;">
-                                        <option value="" disabled selected>Select Treatment *</option>
-                                        <option value="implants">Dental Implants</option>
-                                        <option value="smile-design">Smile Designing</option>
-                                        <option value="cosmetic">Cosmetic Dentistry</option>
-                                        <option value="rct">Root Canal Therapy</option>
-                                        <option value="braces">Braces &amp; Aligners</option>
-                                        <option value="replacement">Tooth Replacement</option>
-                                        <option value="pediatric">Child Dentistry</option>
-                                        <option value="surgery">Minor Surgery</option>
-                                        <option value="gum">Gum Therapy</option>
-                                        <option value="jewellery">Tooth Jewellery</option>
-                                        <option value="general">General Checkup</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-12 mb-4">
-                                    <input type="text" id="message" class="form-control" placeholder="Message / Notes (Optional)">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <button type="submit" class="btn-default">Book Appointment</button>
-                                    <div id="msgSubmit" class="h3 hidden"></div>
-                                </div>
-                            </div>
-                        </form>
-                        <!-- Form End -->
-                    </div>
                 </div>
             </div>
         </div>
