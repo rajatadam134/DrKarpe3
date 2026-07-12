@@ -7038,3 +7038,16 @@ select.form-control:focus {
 		will-change: transform;
 	}
 }
+
+/* ==========================================
+   Homepage Hero Rating Spacing Fix
+   ========================================== */
+.hero.bg-image .hero-content .google-rating {
+	margin-top: 35px !important;
+}
+
+@media (max-width: 991px) {
+	.hero.bg-image .hero-content .google-rating {
+		margin-top: 25px !important;
+	}
+}
