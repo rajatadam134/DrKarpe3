@@ -1173,18 +1173,25 @@ header.main-header .header-sticky.active{
 }
 
 .about-img-1 img{
-	aspect-ratio: 1 /0.96;
+	aspect-ratio: 1.5 / 1;
 	object-fit: cover;
+	object-position: center;
 	border-radius: 40px;
+}
+
+.page-about .about-img-1 img{
+	aspect-ratio: 2.45 / 1;
 }
 
 .about-img-2{
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	width: 380px;
 }
 
 .about-img-2 img{
+	width: 100%;
 	aspect-ratio: 1 /0.72;
 	object-fit: cover;
 	border: 7px solid var(--white-color);
