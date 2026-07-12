@@ -1074,7 +1074,7 @@
             const query = `*[_type == "post"] | order(publishedAt desc) {
                 title,
                 slug,
-                category,
+                "category": coalesce(category->title, category),
                 excerpt,
                 mainImage,
                 publishedAt

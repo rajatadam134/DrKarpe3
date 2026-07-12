@@ -290,7 +290,7 @@
             const cleanSlug = slug.replace(/"/g, '\"');
             const query = `*[_type == "post" && slug.current == "${cleanSlug}"][0] {
                 title,
-                category,
+                "category": coalesce(category->title, category),
                 excerpt,
                 publishedAt,
                 mainImage,
@@ -317,23 +317,39 @@
                 document.getElementById("breadcrumb-title").textContent = post.title;
 
                 // Helper to initialize reveal animations on dynamically injected elements
-                const initializeDynamicReveals = (parentEl) => {
+                const initializeDynamicReveals = (parentEl, useScrollTrigger = true) => {
                     if (!window.gsap) return;
+                    if (window.ScrollTrigger) {
+                        gsap.registerPlugin(ScrollTrigger);
+                    }
                     const revealContainers = parentEl.querySelectorAll(".reveal");
                     revealContainers.forEach((container) => {
-                        if (container.style.visibility === "visible" || gsap.getProperty(container, "autoAlpha") === 1) return;
                         let image = container.querySelector("img");
                         if (!image) return;
                         
-                        let tl = gsap.timeline({
-                            scrollTrigger: {
+                        let tlOptions = {};
+                        if (useScrollTrigger && window.ScrollTrigger) {
+                            tlOptions.scrollTrigger = {
                                 trigger: container,
                                 toggleActions: "play none none none"
-                            }
-                        });
+                            };
+                        }
+                        
+                        let tl = gsap.timeline(tlOptions);
                         tl.set(container, { autoAlpha: 1 });
                         tl.from(container, 1, { xPercent: -100, ease: Power2.out });
                         tl.from(image, 1, { xPercent: 100, scale: 1, delay: -1, ease: Power2.out });
+                        
+                        // Force refresh when image loads to correct offset metrics
+                        image.onload = () => {
+                            if (window.ScrollTrigger) {
+                                ScrollTrigger.refresh();
+                            }
+                        };
+                        // Trigger immediate refresh if already cached/loaded
+                        if (image.complete) {
+                            image.onload();
+                        }
                     });
                 };
 
@@ -342,14 +358,14 @@
                     const imgUrl = buildImageUrl(post.mainImage);
                     const imgContainer = document.getElementById("post-image-container");
                     imgContainer.innerHTML = `<figure class="image-anime reveal"><img src="${imgUrl}" alt="${post.title}"></figure>`;
-                    initializeDynamicReveals(imgContainer);
+                    initializeDynamicReveals(imgContainer, false); // Don't use scrollTrigger for top-fold image
                 } else {
                     document.getElementById("post-image-container").style.display = 'none';
                 }
 
                 // Body content
                 postContent.innerHTML = renderPortableText(post.body);
-                initializeDynamicReveals(postContent);
+                initializeDynamicReveals(postContent, true); // Use scrollTrigger for inline body images
                 
                 loadingArea.style.display = "none";
                 postContent.style.display = "block";
