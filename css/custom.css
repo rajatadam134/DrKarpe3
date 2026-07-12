@@ -7072,14 +7072,15 @@ select.form-control:focus {
    Safety Protocols Page Layout Styles
    ========================================== */
 
-/* Laptop Navigation Bar Fix (to fit "Safety First" item) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .main-menu ul li a {
-        padding: 14px 10px !important;
-        font-size: 15px !important;
-    }
+/* Laptop Navigation Bar Fix (to fit "Safety First" item without wrapping) */
+@media only screen and (min-width: 992px) {
     .main-menu ul li {
         margin: 0 4px !important;
+    }
+    .main-menu ul li a {
+        font-size: 14.5px !important;
+        padding: 12px 9px !important;
+        white-space: nowrap !important;
     }
 }
 
@@ -7097,47 +7098,34 @@ select.form-control:focus {
     overflow: hidden;
 }
 
-.sterilisation-steps-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.sterilisation-col {
-    flex: 1;
-    min-width: 280px;
-    padding: 15px;
-}
-
-.sterilisation-center-image {
-    flex: 0 0 350px;
+.sterilisation-left-image {
+    padding: 10px;
+    background: var(--white-color);
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(15, 42, 56, 0.08);
+    border: 1px solid rgba(15, 42, 56, 0.05);
+    display: inline-block;
     max-width: 100%;
-    text-align: center;
-    padding: 15px;
 }
 
-.sterilisation-center-image img {
+.sterilisation-left-image img {
+    border-radius: 18px;
     width: 100%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(15, 42, 56, 0.12);
-    border: 4px solid var(--white-color);
-    transition: all 0.4s ease-in-out;
+    display: block;
+    transition: transform 0.4s ease-in-out;
 }
 
-.sterilisation-center-image img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(15, 42, 56, 0.18);
+.sterilisation-left-image:hover img {
+    transform: scale(1.02);
 }
 
 .sterilisation-card {
     background: var(--white-color);
-    padding: 30px;
+    padding: 24px 30px;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(15, 42, 56, 0.05);
-    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(15, 42, 56, 0.03);
+    margin-bottom: 20px;
     border: 1px solid rgba(15, 42, 56, 0.04);
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -7157,8 +7145,8 @@ select.form-control:focus {
 }
 
 .sterilisation-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(15, 42, 56, 0.08);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(15, 42, 56, 0.07);
 }
 
 .sterilisation-card:hover::before {
@@ -7166,20 +7154,20 @@ select.form-control:focus {
 }
 
 .sterilisation-card-step-num {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     color: var(--accent-color);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     display: block;
 }
 
 .sterilisation-card h3 {
-    font-size: 20px;
+    font-size: 21px; /* Clear hierarchical contrast */
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     text-transform: capitalize;
 }
 
@@ -7188,17 +7176,6 @@ select.form-control:focus {
     line-height: 1.6;
     margin: 0;
     color: var(--text-color);
-}
-
-/* Align step text to the right on large screen for left column */
-@media (min-width: 992px) {
-    .sterilisation-col-left .sterilisation-card {
-        text-align: right;
-    }
-    .sterilisation-col-left .sterilisation-card::before {
-        left: auto;
-        right: 0;
-    }
 }
 
 /* Advanced Technology Section Grid */
@@ -7213,7 +7190,7 @@ select.form-control:focus {
     overflow: hidden;
     box-shadow: 0 20px 45px rgba(15, 42, 56, 0.1);
     border: 6px solid var(--white-color);
-    margin-bottom: 30px;
+    margin: 0 auto 50px auto;
 }
 
 .tech-featured-wrapper img {
@@ -7229,8 +7206,8 @@ select.form-control:focus {
 
 .tech-cards-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 24px;
 }
 
 .tech-card {
@@ -7268,17 +7245,23 @@ select.form-control:focus {
 }
 
 .tech-card h3 {
-    font-size: 18px;
+    font-size: 20px; /* Clear hierarchical contrast */
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 8px;
 }
 
 .tech-card p {
-    font-size: 14.5px;
+    font-size: 15px;
     line-height: 1.5;
     margin: 0;
     color: var(--text-color);
+}
+
+@media (max-width: 991px) {
+    .tech-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 767px) {
@@ -7327,7 +7310,7 @@ select.form-control:focus {
 }
 
 .qa-feature-content h3 {
-    font-size: 19px;
+    font-size: 21px; /* Clear hierarchical contrast */
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 8px;
