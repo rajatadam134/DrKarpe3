@@ -316,16 +316,40 @@
                 document.getElementById("post-title").innerHTML = formatTitleDualTone(post.title);
                 document.getElementById("breadcrumb-title").textContent = post.title;
 
+                // Helper to initialize reveal animations on dynamically injected elements
+                const initializeDynamicReveals = (parentEl) => {
+                    if (!window.gsap) return;
+                    const revealContainers = parentEl.querySelectorAll(".reveal");
+                    revealContainers.forEach((container) => {
+                        if (container.style.visibility === "visible" || gsap.getProperty(container, "autoAlpha") === 1) return;
+                        let image = container.querySelector("img");
+                        if (!image) return;
+                        
+                        let tl = gsap.timeline({
+                            scrollTrigger: {
+                                trigger: container,
+                                toggleActions: "play none none none"
+                            }
+                        });
+                        tl.set(container, { autoAlpha: 1 });
+                        tl.from(container, 1, { xPercent: -100, ease: Power2.out });
+                        tl.from(image, 1, { xPercent: 100, scale: 1, delay: -1, ease: Power2.out });
+                    });
+                };
+
                 // Main Image
                 if (post.mainImage) {
                     const imgUrl = buildImageUrl(post.mainImage);
-                    document.getElementById("post-image-container").innerHTML = `<figure class="image-anime reveal"><img src="${imgUrl}" alt="${post.title}"></figure>`;
+                    const imgContainer = document.getElementById("post-image-container");
+                    imgContainer.innerHTML = `<figure class="image-anime reveal"><img src="${imgUrl}" alt="${post.title}"></figure>`;
+                    initializeDynamicReveals(imgContainer);
                 } else {
                     document.getElementById("post-image-container").style.display = 'none';
                 }
 
                 // Body content
                 postContent.innerHTML = renderPortableText(post.body);
+                initializeDynamicReveals(postContent);
                 
                 loadingArea.style.display = "none";
                 postContent.style.display = "block";
