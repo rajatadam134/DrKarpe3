@@ -7051,3 +7051,19 @@ select.form-control:focus {
 		margin-top: 25px !important;
 	}
 }
+
+/* ==========================================
+   Mobile About Page Infrastructure Layout Fix
+   ========================================== */
+@media (max-width: 991px) {
+	.page-about .about-image .about-img-1 {
+		position: relative;
+		top: -60px;
+	}
+}
+
+@media (max-width: 767px) {
+	.page-about .about-image .about-img-1 {
+		top: -45px;
+	}
+}
