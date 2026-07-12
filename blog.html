@@ -268,7 +268,7 @@
                     const isFallback = fallbackPosts.find(p => p.slug.current === postSlug);
                     const linkHref = isFallback ? isFallback.staticUrl : `blog-post.html?slug=${postSlug}`;
                     
-                    let imgUrl = "assets/img/blog/get-it-done.jpg"; // Default image
+                    let imgUrl = "assets/img/blog/get-it-done.webp"; // Default image
                     if (post.mainImage) {
                         imgUrl = buildImageUrl(post.mainImage);
                     } else if (post.mainImageUrl) {
