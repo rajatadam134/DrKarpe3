@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let html = "";
 
     selectedReviews.forEach(function(review, index) {
-        const authorImg = "assets/img/testimonials/male.jpeg";
+        const authorImg = "assets/img/testimonials/male.webp";
         html += `
         <div class="swiper-slide">
             <div class="testimonial-item">	

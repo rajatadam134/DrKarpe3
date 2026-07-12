@@ -17,7 +17,7 @@ const fallbackPosts = [
     slug: { current: "how-to-save-your-child-teeth" },
     category: "Pediatric Care",
     excerpt: "Keeping your child's milk teeth healthy is essential for their permanent teeth development and general health. Learn pediatric brushing techniques, optimal diet patterns, and how to prepare your child for their first dentist visit.",
-    mainImageUrl: "assets/img/blog/how-to-save-your-child-teeth.jpg",
+    mainImageUrl: "assets/img/blog/how-to-save-your-child-teeth.webp",
     publishedAt: "2026-06-23T00:00:00.000Z",
     isStatic: true,
     staticUrl: "how-to-save-your-child-teeth.html"
@@ -27,7 +27,7 @@ const fallbackPosts = [
     slug: { current: "What-is-next-after-tooth-removal" },
     category: "Restorative Dentistry",
     excerpt: "Losing a tooth has serious side-effects: facial sagging, bone resorption, chewing difficulties, and adjacent teeth shifting out of place. Discover artificial options like dentures, bridges, and advanced dental implants.",
-    mainImageUrl: "assets/img/blog/What-is-next-after-tooth-removal.jpg",
+    mainImageUrl: "assets/img/blog/What-is-next-after-tooth-removal.webp",
     publishedAt: "2026-06-18T00:00:00.000Z",
     isStatic: true,
     staticUrl: "What-is-next-after-tooth-removal.html"
@@ -37,7 +37,7 @@ const fallbackPosts = [
     slug: { current: "Get-it-done-or-it-will-be-too-late" },
     category: "Oral Hygiene",
     excerpt: "Teeth are an integral part of the body. Tooth is covered by a layer called ‘ENAMEL’ which once get destroyed cannot be regained. Learn how early tooth fillings prevent deep rot, root canal pain, and eventual tooth loss.",
-    mainImageUrl: "assets/img/blog/get-it-done.jpg",
+    mainImageUrl: "assets/img/blog/get-it-done.webp",
     publishedAt: "2026-06-12T00:00:00.000Z",
     isStatic: true,
     staticUrl: "Get-it-done-or-it-will-be-too-late.html"
