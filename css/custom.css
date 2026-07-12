@@ -7022,3 +7022,19 @@ select.form-control:focus {
 		padding-bottom: 15px;
 	}
 }
+
+/* ==========================================
+   Desktop Sticky Sidebar Layout for Treatments
+   ========================================== */
+@media (min-width: 992px) {
+	html, body {
+		overflow-x: visible !important;
+	}
+	.service-sidebar {
+		position: sticky !important;
+		top: 73px !important;
+		align-self: start !important;
+		z-index: 10;
+		will-change: transform;
+	}
+}
