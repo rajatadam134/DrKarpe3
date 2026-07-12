@@ -7322,3 +7322,9 @@ select.form-control:focus {
     margin: 0;
 }
 
+/* Dual tone blog list headings support */
+.blog-item .post-item-body h2 a span {
+    color: var(--accent-color) !important;
+}
+
+

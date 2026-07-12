@@ -313,7 +313,7 @@
                 if (post.publishedAt) {
                     document.getElementById("post-meta-date").textContent = formatDate(post.publishedAt);
                 }
-                document.getElementById("post-title").innerHTML = post.title;
+                document.getElementById("post-title").innerHTML = formatTitleDualTone(post.title);
                 document.getElementById("breadcrumb-title").textContent = post.title;
 
                 // Main Image

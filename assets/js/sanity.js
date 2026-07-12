@@ -196,3 +196,16 @@ function formatDate(isoString) {
     day: 'numeric'
   });
 }
+
+// Format title to have dual-tone (first two words wrapped in span)
+function formatTitleDualTone(title) {
+  if (!title) return '';
+  const words = title.trim().split(/\s+/);
+  if (words.length <= 1) {
+    return `<span>${title}</span>`;
+  }
+  const firstTwo = words.slice(0, 2).join(' ');
+  const remaining = words.slice(2).join(' ');
+  return `<span>${firstTwo}</span> ${remaining}`;
+}
+
