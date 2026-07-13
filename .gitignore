@@ -30,3 +30,9 @@ css/*_demo.css
 *.jpg
 *.jpeg
 
+# Sanity Studio
+studio/node_modules/
+studio/.sanity/
+studio/dist/
+
+
