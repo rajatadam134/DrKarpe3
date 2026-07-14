@@ -19,7 +19,7 @@
         ]
       },
       "hours_locations": {
-        "text": "We have two branches equipped with state-of-the-art dental diagnostics:<br><br>📍 <strong>Solapur Branch (Main):</strong><br>139, Vijay Tower, Near Bombay Bakery, Railway Line, Solapur.<br>🕒 Mon-Sat: 10:00 AM - 1:30 PM & 5:00 PM - 9:00 PM.<br><br>📍 <strong>Akkalkot Branch:</strong><br>35, Shiv Chatrapati Vyapari Sankul, Kanda Bazaar, Akkalkot.<br>🕒 Mon-Sat: 10:00 AM - 2:00 PM & 5:00 PM - 8:00 PM.<br><br>⚠️ Both branches are closed on Sundays.",
+        "text": "We have two branches equipped with state-of-the-art dental diagnostics:<br><br>📍 <strong>Solapur Branch:</strong><br>139, Vijay Tower, Near Bombay Bakery, Railway Line, Solapur.<br>🕒 Mon-Sat: 10 am to 8:30 pm.<br><br>📍 <strong>Akkalkot Branch:</strong><br>35, Shiv Chatrapati Vyapari Sankul, Kanda Bazaar, Akkalkot.<br>🕒 Mon-Sat: 10 am to 8:30 pm.<br><br>⚠️ Both branches are closed on Sundays.",
         "options": [
           { "text": "📅 Book Appointment", "nextKey": "booking" },
           { "text": "🦷 Check Treatments", "nextKey": "treatments" },
@@ -106,7 +106,7 @@
       {
         "keywords": ["hours", "timings", "open", "time", "schedule", "opening", "days"],
         "question": "What are the clinic timings?",
-        "answer": "We are open Monday through Saturday:<br><br>📍 <strong>Solapur (Main):</strong> 10:00 AM - 1:30 PM & 5:00 PM - 9:00 PM.<br>📍 <strong>Akkalkot:</strong> 10:00 AM - 2:00 PM & 5:00 PM - 8:00 PM.<br><br>🛑 Both branches are closed on Sundays."
+        "answer": "We are open Monday through Saturday:<br><br>📍 <strong>Solapur:</strong> 10 am to 8:30 pm.<br>📍 <strong>Akkalkot:</strong> 10 am to 8:30 pm.<br><br>🛑 Both branches are closed on Sundays."
       },
       {
         "keywords": ["sunday", "sundays", "holiday", "weekend"],
