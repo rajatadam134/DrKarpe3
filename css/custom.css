@@ -7330,4 +7330,32 @@ select.form-control:focus {
     color: var(--accent-color) !important;
 }
 
+/* CTA Counter Item Layout & Color Overrides */
+.cta-counter-item {
+	padding: 10px 15px;
+	text-align: center;
+}
+.cta-counter-item h2 {
+	font-size: 48px !important;
+	color: var(--accent-color) !important;
+	font-weight: 700 !important;
+	margin-bottom: 5px !important;
+}
+.cta-counter-item h3 {
+	font-size: 14px !important;
+	text-transform: uppercase !important;
+	color: var(--white-color) !important;
+	margin-top: 10px !important;
+	font-weight: 500 !important;
+	letter-spacing: 0.5px !important;
+}
+@media (min-width: 992px) {
+	.cta-counter-item {
+		border-right: 1px solid rgba(255, 255, 255, 0.15);
+	}
+	.col-lg-3:last-child .cta-counter-item {
+		border-right: none;
+	}
+}
+
 
