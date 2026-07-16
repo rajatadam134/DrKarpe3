@@ -4372,6 +4372,8 @@ footer.main-footer{
 	}
 
 	.service-sidebar{
+		display: block !important;
+		height: auto !important;
 		margin-right: 0;
 		margin-bottom: 30px;
 		margin-top: 0 !important;
@@ -4388,6 +4390,8 @@ footer.main-footer{
 	
 	.sidebar-cta-box{
 		padding: 30px;
+		margin-top: 0 !important;
+		margin-bottom: 30px !important;
 	}
 
 	.sidebar-cta-box .icon-box{
@@ -7035,19 +7039,31 @@ select.form-control:focus {
 		overflow-x: visible !important;
 	}
 	.service-sidebar {
-		position: sticky !important;
-		top: 10px !important;
+		display: flex !important;
+		flex-direction: column !important;
+		height: 100% !important;
 		margin-top: -80px !important;
-		align-self: start !important;
+	}
+	.service-catagery-list {
+		position: sticky !important;
+		top: 115px !important;
 		z-index: 10;
 		will-change: transform;
+		padding: 22px 25px !important;
 	}
 	.service-catagery-list h3 {
-		margin-bottom: 15px !important;
+		margin-bottom: 12px !important;
 	}
 	.service-catagery-list ul li {
-		margin-bottom: 8px !important;
-		padding-bottom: 8px !important;
+		margin-bottom: 7px !important;
+		padding-bottom: 7px !important;
+	}
+	.service-catagery-list ul li a {
+		font-size: 15px !important;
+	}
+	.sidebar-cta-box {
+		margin-top: auto !important;
+		margin-bottom: 50px !important;
 	}
 }
 
@@ -7365,6 +7381,18 @@ select.form-control:focus {
 	.col-lg-3:last-child .cta-counter-item {
 		border-right: none;
 	}
+}
+
+/* ==========================================
+   Treatments Pages Spacing Enhancements
+   ========================================== */
+.service-faqs {
+	margin-top: 80px;
+}
+
+.service-entry h3 {
+	margin-top: 45px !important;
+	margin-bottom: 20px !important;
 }
 
 
