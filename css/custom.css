@@ -4372,8 +4372,7 @@ footer.main-footer{
 	}
 
 	.service-sidebar{
-		display: block !important;
-		height: auto !important;
+		position: static !important;
 		margin-right: 0;
 		margin-bottom: 30px;
 		margin-top: 0 !important;
@@ -4390,8 +4389,6 @@ footer.main-footer{
 	
 	.sidebar-cta-box{
 		padding: 30px;
-		margin-top: 0 !important;
-		margin-bottom: 30px !important;
 	}
 
 	.sidebar-cta-box .icon-box{
@@ -7039,17 +7036,12 @@ select.form-control:focus {
 		overflow-x: visible !important;
 	}
 	.service-sidebar {
-		display: flex !important;
-		flex-direction: column !important;
-		height: 100% !important;
-		margin-top: -80px !important;
-	}
-	.service-catagery-list {
 		position: sticky !important;
 		top: 115px !important;
+		margin-top: -80px !important;
+		align-self: start !important;
 		z-index: 10;
 		will-change: transform;
-		padding: 22px 25px !important;
 	}
 	.service-catagery-list h3 {
 		margin-bottom: 12px !important;
@@ -7060,10 +7052,6 @@ select.form-control:focus {
 	}
 	.service-catagery-list ul li a {
 		font-size: 15px !important;
-	}
-	.sidebar-cta-box {
-		margin-top: auto !important;
-		margin-bottom: 50px !important;
 	}
 }
 
