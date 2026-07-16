@@ -4374,6 +4374,7 @@ footer.main-footer{
 	.service-sidebar{
 		margin-right: 0;
 		margin-bottom: 30px;
+		margin-top: 0 !important;
 	}
 
 	.service-catagery-list{
@@ -7035,7 +7036,8 @@ select.form-control:focus {
 	}
 	.service-sidebar {
 		position: sticky !important;
-		top: 73px !important;
+		top: 10px !important;
+		margin-top: -80px !important;
 		align-self: start !important;
 		z-index: 10;
 		will-change: transform;
