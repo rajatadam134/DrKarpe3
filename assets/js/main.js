@@ -338,4 +338,48 @@ _Submitted via website form_`;
     });
   }
 
+  /* ---- DENTAL CAMP FORM SUBMISSION (WhatsApp Redirection) ---- */
+  const campForm = document.getElementById('dental-camp-form');
+  if (campForm) {
+    campForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = campForm.querySelector('#camp-name').value;
+      const email = campForm.querySelector('#camp-email').value;
+      const phone = campForm.querySelector('#camp-phone').value;
+
+      const whatsappNumber = '918767223224';
+
+      const messageText = 
+`*Dental Camp Request*
+---------------------------------
+*Name/Workplace:* ${name}
+*Phone:* ${phone}
+*Email:* ${email}
+---------------------------------
+_Submitted via website (Dental Camp Form)_`;
+
+      const encodedText = encodeURIComponent(messageText);
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+      window.open(whatsappUrl, '_blank');
+
+      campForm.innerHTML = `
+        <div class="form-success-message" style="text-align: center; padding: 1.5rem 0; animation: fadeInUp 0.6s ease forwards;">
+          <div style="width: 3.5rem; height: 3.5rem; background: rgba(141, 191, 58, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; color: var(--accent-color);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h4 style="margin-bottom: 0.5rem; color: var(--primary-color); font-weight: 700;">Redirecting to WhatsApp...</h4>
+          <p style="color: var(--text-color); max-width: 28rem; margin: 0 auto 1.5rem auto; font-size: 0.9rem;">
+            Thank you, <strong>${name}</strong>. We have opened a WhatsApp chat with Dr. Karpe's team for your dental camp request. Please send the pre-filled message in WhatsApp to confirm.
+          </p>
+          <button type="button" class="btn-default" onclick="window.location.reload()" style="margin: 0 auto; padding: 10px 24px;">Request Another Camp</button>
+        </div>
+      `;
+    });
+  }
+
 });
+
