@@ -11,7 +11,7 @@ const reviewsDatabase = [
     {
         name: "Anjali Shinde",
         location: "Solapur",
-        text: "Outstanding service! Dr. Ashwini designed my smile correction using laminates. The transformation is amazing and looks completely natural. Thank you doctors!",
+        text: "Outstanding service! Dr. Ashvini designed my smile correction using laminates. The transformation is amazing and looks completely natural. Thank you doctors!",
         role: "Verified Patient"
     },
     {
@@ -29,7 +29,7 @@ const reviewsDatabase = [
     {
         name: "Snehal Deshmukh",
         location: "Solapur",
-        text: "Best dental clinic in Solapur! Dr. Ashwini Karpe did my smile designing and cosmetic treatment. My teeth look incredibly natural now. The staff is very friendly and supportive. Highly recommended!",
+        text: "Best dental clinic in Solapur! Dr. Ashvini Karpe did my smile designing and cosmetic treatment. My teeth look incredibly natural now. The staff is very friendly and supportive. Highly recommended!",
         role: "Verified Patient"
     },
     {
@@ -65,7 +65,7 @@ const reviewsDatabase = [
     {
         name: "Shweta Kadam",
         location: "Solapur",
-        text: "Got my braces treatment done here. The aligners are very comfortable and the progress has been excellent. Dr. Ashwini Karpe pays attention to every minor detail.",
+        text: "Got my braces treatment done here. The aligners are very comfortable and the progress has been excellent. Dr. Ashvini Karpe pays attention to every minor detail.",
         role: "Verified Patient"
     }
 ];

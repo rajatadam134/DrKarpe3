@@ -440,6 +440,6 @@
 	/* Dynamic Experience Calculation */
 	const currentYear = new Date().getFullYear();
 	$('.exp-years-vivek').text(currentYear - 2001);
-	$('.exp-years-ashwini').text(currentYear - 2006);
+	$('.exp-years-Ashvini').text(currentYear - 2006);
 	
 })(jQuery);

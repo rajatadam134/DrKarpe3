@@ -62,7 +62,7 @@
         ]
       },
       "faq_cosmetic": {
-        "text": "<strong>Smile Designing & Cosmetic Dentistry:</strong><br><br>👩‍⚕️ Conducted by <strong>Dr. Ashwini Karpe</strong> (BDS GDC Aurangabad), specializing in aesthetic smile makeovers with 20+ years experience.<br><br>• <strong>Veneers & Laminates:</strong> High-grade porcelain shells custom-bonded to teeth for correcting shape, gap, and discoloration.<br>• <strong>Whitening:</strong> Safe, advanced bleaching protocols for bright teeth.",
+        "text": "<strong>Smile Designing & Cosmetic Dentistry:</strong><br><br>👩‍⚕️ Conducted by <strong>Dr. Ashvini Karpe</strong> (BDS GDC Aurangabad), specializing in aesthetic smile makeovers with 20+ years experience.<br><br>• <strong>Veneers & Laminates:</strong> High-grade porcelain shells custom-bonded to teeth for correcting shape, gap, and discoloration.<br>• <strong>Whitening:</strong> Safe, advanced bleaching protocols for bright teeth.",
         "options": [
           { "text": "📅 Book Consultation", "nextKey": "booking" },
           { "text": "↩️ Back to Treatments Menu", "nextKey": "treatments" }
@@ -99,9 +99,9 @@
     },
     "faqs": [
       {
-        "keywords": ["doctor", "doctors", "dentist", "dentists", "specialist", "specialists", "vivek", "ashwini", "who"],
+        "keywords": ["doctor", "doctors", "dentist", "dentists", "specialist", "specialists", "vivek", "Ashvini", "who"],
         "question": "Who are the doctors at the clinic?",
-        "answer": "Our clinic is run by two highly qualified dental specialists:<br><br>👨‍⚕️ <strong>Dr. Vivek Karpe (Implantologist):</strong> BDS from GDC Mumbai with 25+ years experience. Trained in Germany for dental implants.<br><br>👩‍⚕️ <strong>Dr. Ashwini Karpe (Cosmetic Dentist):</strong> BDS from GDC Aurangabad with 20+ years experience, specializing in aesthetic smile design."
+        "answer": "Our clinic is run by two highly qualified dental specialists:<br><br>👨‍⚕️ <strong>Dr. Vivek Karpe (Implantologist):</strong> BDS from GDC Mumbai with 25+ years experience. Trained in Germany for dental implants.<br><br>👩‍⚕️ <strong>Dr. Ashvini Karpe (Cosmetic Dentist):</strong> BDS from GDC Aurangabad with 20+ years experience, specializing in aesthetic smile design."
       },
       {
         "keywords": ["hours", "timings", "open", "time", "schedule", "opening", "days"],
@@ -141,7 +141,7 @@
       {
         "keywords": ["veneer", "veneers", "laminate", "laminates", "smile correction", "gaps"],
         "question": "What are veneers and laminates?",
-        "answer": "Veneers and laminates are wafer-thin, custom-made shells of porcelain or composite resin bonded to the front of teeth. Dr. Ashwini Karpe uses them to cover chips, close gaps, correct misalignment, and mask severe staining."
+        "answer": "Veneers and laminates are wafer-thin, custom-made shells of porcelain or composite resin bonded to the front of teeth. Dr. Ashvini Karpe uses them to cover chips, close gaps, correct misalignment, and mask severe staining."
       },
       {
         "keywords": ["teeth whitening", "whitening", "bleaching", "yellow teeth"],
@@ -246,7 +246,7 @@
       {
         "keywords": ["about", "clinic history", "infrastructure", "establishment"],
         "question": "Can you tell me about the clinic's history?",
-        "answer": "Dr. Karpe's Centre for Advanced Dentistry is a premier dental healthcare facility in Solapur and Akkalkot, offering advanced diagnostics and clinical treatments. Led by Dr. Vivek Karpe and Dr. Ashwini Karpe, we deliver specialized, multi-disciplinary dental care under one roof."
+        "answer": "Dr. Karpe's Centre for Advanced Dentistry is a premier dental healthcare facility in Solapur and Akkalkot, offering advanced diagnostics and clinical treatments. Led by Dr. Vivek Karpe and Dr. Ashvini Karpe, we deliver specialized, multi-disciplinary dental care under one roof."
       }
     ]
   };

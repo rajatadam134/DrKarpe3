@@ -21,7 +21,11 @@
     "booking": {
       "text": "You can schedule your consultation session in two easy ways:<br><br>1. 📝 Fill out our online booking form on the website.<br>2. 📞 Call/WhatsApp our reception desk directly.<br><br>Which option would you prefer?",
       "options": [
-        { "text": "💻 Open Booking Form", "action": "link", "url": "contact.html#book" },
+        {
+          "text": "💻 Open Booking Form",
+          "action": "link",
+          "url": "contact.html#book"
+        },
         { "text": "💬 Chat on WhatsApp", "action": "whatsapp" },
         { "text": "↩️ Back to Main Menu", "nextKey": "welcome" }
       ]
@@ -33,14 +37,21 @@
         { "text": "✨ Smile Design & Veneers", "nextKey": "faq_cosmetic" },
         { "text": "⚡ Painless Root Canal (RCT)", "nextKey": "faq_rct" },
         { "text": "😬 Clear Aligners & Braces", "nextKey": "faq_ortho" },
-        { "text": "👶 Child Dentistry (Pediatric)", "nextKey": "faq_pediatric" },
+        {
+          "text": "👶 Child Dentistry (Pediatric)",
+          "nextKey": "faq_pediatric"
+        },
         { "text": "↩️ Back to Main Menu", "nextKey": "welcome" }
       ]
     },
     "emergency": {
       "text": "⚠️ <strong>Dental Emergency Advice:</strong><br><br>• <strong>Severe Toothache:</strong> Rinse with warm water and take an over-the-counter painkiller. Avoid placing aspirin directly on the gums.<br>• <strong>Knocked-Out Tooth:</strong> Keep it moist in milk or saliva and contact us immediately. If seen within 1 hour, we can often save the tooth!<br>• <strong>Bleeding or Swelling:</strong> Apply clean cold compress and seek emergency care.<br><br>📞 Call us immediately: Solapur <strong>+91 94055-49094</strong> or Akkalkot <strong>+91 95031-59509</strong>.",
       "options": [
-        { "text": "📞 Call Solapur Clinic", "action": "call", "phone": "+919405549094" },
+        {
+          "text": "📞 Call Solapur Clinic",
+          "action": "call",
+          "phone": "+919405549094"
+        },
         { "text": "💬 Chat on WhatsApp", "action": "whatsapp" },
         { "text": "↩️ Back to Main Menu", "nextKey": "welcome" }
       ]
@@ -54,7 +65,7 @@
       ]
     },
     "faq_cosmetic": {
-      "text": "<strong>Smile Designing & Cosmetic Dentistry:</strong><br><br>👩‍⚕️ Conducted by <strong>Dr. Ashwini Karpe</strong> (BDS GDC Aurangabad), specializing in aesthetic smile makeovers with 20+ years experience.<br><br>• <strong>Veneers & Laminates:</strong> High-grade porcelain shells custom-bonded to teeth for correcting shape, gap, and discoloration.<br>• <strong>Whitening:</strong> Safe, advanced bleaching protocols for bright teeth.",
+      "text": "<strong>Smile Designing & Cosmetic Dentistry:</strong><br><br>👩‍⚕️ Conducted by <strong>Dr. Ashvini Karpe</strong> (BDS GDC Aurangabad), specializing in aesthetic smile makeovers with 20+ years experience.<br><br>• <strong>Veneers & Laminates:</strong> High-grade porcelain shells custom-bonded to teeth for correcting shape, gap, and discoloration.<br>• <strong>Whitening:</strong> Safe, advanced bleaching protocols for bright teeth.",
       "options": [
         { "text": "📅 Book Consultation", "nextKey": "booking" },
         { "text": "↩️ Back to Treatments Menu", "nextKey": "treatments" }
@@ -91,12 +102,30 @@
   },
   "faqs": [
     {
-      "keywords": ["doctor", "doctors", "dentist", "dentists", "specialist", "specialists", "vivek", "ashwini", "who"],
+      "keywords": [
+        "doctor",
+        "doctors",
+        "dentist",
+        "dentists",
+        "specialist",
+        "specialists",
+        "vivek",
+        "Ashvini",
+        "who"
+      ],
       "question": "Who are the doctors at the clinic?",
-      "answer": "Our clinic is run by two highly qualified dental specialists:<br><br>👨‍⚕️ <strong>Dr. Vivek Karpe (Implantologist):</strong> BDS from GDC Mumbai with 25+ years experience. Trained in Germany for dental implants.<br><br>👩‍⚕️ <strong>Dr. Ashwini Karpe (Cosmetic Dentist):</strong> BDS from GDC Aurangabad with 20+ years experience, specializing in aesthetic smile design."
+      "answer": "Our clinic is run by two highly qualified dental specialists:<br><br>👨‍⚕️ <strong>Dr. Vivek Karpe (Implantologist):</strong> BDS from GDC Mumbai with 25+ years experience. Trained in Germany for dental implants.<br><br>👩‍⚕️ <strong>Dr. Ashvini Karpe (Cosmetic Dentist):</strong> BDS from GDC Aurangabad with 20+ years experience, specializing in aesthetic smile design."
     },
     {
-      "keywords": ["hours", "timings", "open", "time", "schedule", "opening", "days"],
+      "keywords": [
+        "hours",
+        "timings",
+        "open",
+        "time",
+        "schedule",
+        "opening",
+        "days"
+      ],
       "question": "What are the clinic timings?",
       "answer": "We are open Monday through Saturday:<br><br>📍 <strong>Solapur:</strong> 10 am to 8:30 pm.<br>📍 <strong>Akkalkot:</strong> 10 am to 8:30 pm.<br><br>🛑 Both branches are closed on Sundays."
     },
@@ -106,17 +135,34 @@
       "answer": "No, both our Solapur and Akkalkot branches are closed on Sundays. For dental emergencies on weekends, please contact our WhatsApp helpline at +91 87672-23224."
     },
     {
-      "keywords": ["solapur", "main", "vijay tower", "bakery", "solapur branch"],
+      "keywords": [
+        "solapur",
+        "main",
+        "vijay tower",
+        "bakery",
+        "solapur branch"
+      ],
       "question": "Where is the Solapur branch located?",
       "answer": "Our Solapur clinic is located at: <strong>139, Vijay Tower, Near Bombay Bakery, Railway Line, Solapur.</strong><br>📞 Contact: +91 94055-49094."
     },
     {
-      "keywords": ["akkalkot", "kanda bazaar", "vyapari sankul", "akkalkot branch"],
+      "keywords": [
+        "akkalkot",
+        "kanda bazaar",
+        "vyapari sankul",
+        "akkalkot branch"
+      ],
       "question": "Where is the Akkalkot branch located?",
       "answer": "Our Akkalkot clinic is located at: <strong>35, Shiv Chatrapati Vyapari Sankul, Kanda Bazaar, Akkalkot.</strong><br>📞 Contact: +91 95031-59509."
     },
     {
-      "keywords": ["implant", "implants", "screw", "missing tooth", "tooth replacement"],
+      "keywords": [
+        "implant",
+        "implants",
+        "screw",
+        "missing tooth",
+        "tooth replacement"
+      ],
       "question": "What are dental implants?",
       "answer": "Dental implants are titanium posts surgically placed into the jawbone to act as artificial tooth roots. Once integrated, a lifelike porcelain or zirconia crown is attached. They are the most durable and natural-looking way to replace missing teeth."
     },
@@ -126,14 +172,27 @@
       "answer": "Not at all. The procedure is performed under local anesthesia, so you won't feel pain. Post-procedure discomfort is mild and easily managed with standard painkillers."
     },
     {
-      "keywords": ["all on 4", "full arch", "all-on-4", "german concept", "no teeth"],
+      "keywords": [
+        "all on 4",
+        "full arch",
+        "all-on-4",
+        "german concept",
+        "no teeth"
+      ],
       "question": "What is the All-on-4 implant technique?",
       "answer": "The All-on-4 concept allows replacement of an entire arch of teeth (upper or lower) using only four strategically placed implants. Dr. Vivek Karpe trained in Germany for this procedure, enabling patients with complete tooth loss to get a fixed set of teeth quickly."
     },
     {
-      "keywords": ["veneer", "veneers", "laminate", "laminates", "smile correction", "gaps"],
+      "keywords": [
+        "veneer",
+        "veneers",
+        "laminate",
+        "laminates",
+        "smile correction",
+        "gaps"
+      ],
       "question": "What are veneers and laminates?",
-      "answer": "Veneers and laminates are wafer-thin, custom-made shells of porcelain or composite resin bonded to the front of teeth. Dr. Ashwini Karpe uses them to cover chips, close gaps, correct misalignment, and mask severe staining."
+      "answer": "Veneers and laminates are wafer-thin, custom-made shells of porcelain or composite resin bonded to the front of teeth. Dr. Ashvini Karpe uses them to cover chips, close gaps, correct misalignment, and mask severe staining."
     },
     {
       "keywords": ["teeth whitening", "whitening", "bleaching", "yellow teeth"],
@@ -151,12 +210,26 @@
       "answer": "Yes. A root canal leaves the tooth brittle and prone to fracturing under chewing pressure. A customized crown (zirconia or metal-ceramic) acts as a protective shield, restoring its full strength."
     },
     {
-      "keywords": ["braces", "aligners", "invisalign", "invisible", "straighten", "crooked"],
+      "keywords": [
+        "braces",
+        "aligners",
+        "invisalign",
+        "invisible",
+        "straighten",
+        "crooked"
+      ],
       "question": "What is the difference between braces and clear aligners?",
       "answer": "Traditional braces use metal/ceramic brackets and wires to move teeth. Clear aligners are transparent, removable plastic trays that do the same job invisibly and comfortably. Both are offered at our clinic for patients of all ages."
     },
     {
-      "keywords": ["kids", "child", "children", "pediatric", "first visit", "milkteeth"],
+      "keywords": [
+        "kids",
+        "child",
+        "children",
+        "pediatric",
+        "first visit",
+        "milkteeth"
+      ],
       "question": "When should my child first visit the dentist?",
       "answer": "We recommend a child's first dental checkup by their first birthday. Early visits help children get comfortable in the dental chair and allow us to monitor jaw development and prevent decay."
     },
@@ -166,7 +239,13 @@
       "answer": "Our basic consultation and examination fee is nominal. Detailed digital X-rays or specialized diagnostic scans may incur additional fees. Please message us on WhatsApp at +91 87672-23224 to verify the current fee."
     },
     {
-      "keywords": ["book", "appointment", "schedule", "online form", "reception"],
+      "keywords": [
+        "book",
+        "appointment",
+        "schedule",
+        "online form",
+        "reception"
+      ],
       "question": "How can I book an appointment?",
       "answer": "You can book by clicking 'Open Booking Form' on our Contact page, or by calling/sending a WhatsApp message directly to +91 87672-23224."
     },
@@ -176,12 +255,24 @@
       "answer": "You can reach us at:<br>📞 Solapur Branch: +91 94055-49094<br>📞 Akkalkot Branch: +91 95031-59509<br>💬 WhatsApp Support: +91 87672-23224."
     },
     {
-      "keywords": ["wisdom", "wisdom tooth", "extraction", "removal", "impaction"],
+      "keywords": [
+        "wisdom",
+        "wisdom tooth",
+        "extraction",
+        "removal",
+        "impaction"
+      ],
       "question": "Do you perform wisdom tooth extractions?",
       "answer": "Yes. Impaction of wisdom teeth often causes pain, swelling, and damage to adjacent teeth. We perform surgical extractions under local anesthesia with minimal discomfort and quick recovery."
     },
     {
-      "keywords": ["bleeding", "gums", "bleeding gums", "brushing pain", "pyorrhea"],
+      "keywords": [
+        "bleeding",
+        "gums",
+        "bleeding gums",
+        "brushing pain",
+        "pyorrhea"
+      ],
       "question": "Why do my gums bleed when brushing?",
       "answer": "Bleeding gums are a primary sign of plaque buildup and gum inflammation (gingivitis). A professional dental scaling and cleaning is highly recommended to remove tartar and restore gum health."
     },
@@ -206,7 +297,13 @@
       "answer": "Most general health insurance policies in India do not cover cosmetic dental procedures or implants, but some cover accidental dental surgeries. We provide all necessary bills and treatment certificates if you have a policy that supports dental claims."
     },
     {
-      "keywords": ["sterilization", "hygiene", "safety", "cleanliness", "covid"],
+      "keywords": [
+        "sterilization",
+        "hygiene",
+        "safety",
+        "cleanliness",
+        "covid"
+      ],
       "question": "What safety and sterilization protocols do you follow?",
       "answer": "Patient safety is our highest priority. We use Class-B autoclaves for vacuum sterilization of all instruments, disposable examination kits, and strict clinic disinfection protocols between every patient."
     },
@@ -216,12 +313,24 @@
       "answer": "Zirconia crowns are metal-free, highly biocompatible caps that offer superior strength and natural tooth-like translucency. They do not leave a dark metal line at the gum line over time and are ideal for both front and back teeth."
     },
     {
-      "keywords": ["emergency", "severe pain", "accident", "broken tooth", "swelling"],
+      "keywords": [
+        "emergency",
+        "severe pain",
+        "accident",
+        "broken tooth",
+        "swelling"
+      ],
       "question": "What constitutes a dental emergency?",
       "answer": "Severe throbbing toothache, facial swelling, a knocked-out permanent tooth, or bleeding from oral trauma are emergencies. Please call us immediately at Solapur: +91 94055-49094 or Akkalkot: +91 95031-59509."
     },
     {
-      "keywords": ["fillings", "cavity", "cementing", "decay filling", "composite"],
+      "keywords": [
+        "fillings",
+        "cavity",
+        "cementing",
+        "decay filling",
+        "composite"
+      ],
       "question": "What type of cavity fillings do you use?",
       "answer": "We use tooth-colored composite resins and glass ionomer cements. These materials bond directly to the tooth structure, restoring strength and blending invisibly with your natural teeth."
     },
@@ -236,9 +345,14 @@
       "answer": "Tooth sensitivity occurs when the protective enamel wears down, exposing the dentin layer underneath. This can be caused by harsh brushing, gum recession, or cavities. We offer desensitizing treatments and fillings to resolve this."
     },
     {
-      "keywords": ["about", "clinic history", "infrastructure", "establishment"],
+      "keywords": [
+        "about",
+        "clinic history",
+        "infrastructure",
+        "establishment"
+      ],
       "question": "Can you tell me about the clinic's history?",
-      "answer": "Dr. Karpe's Centre for Advanced Dentistry is a premier dental healthcare facility in Solapur and Akkalkot, offering advanced diagnostics and clinical treatments. Led by Dr. Vivek Karpe and Dr. Ashwini Karpe, we deliver specialized, multi-disciplinary dental care under one roof."
+      "answer": "Dr. Karpe's Centre for Advanced Dentistry is a premier dental healthcare facility in Solapur and Akkalkot, offering advanced diagnostics and clinical treatments. Led by Dr. Vivek Karpe and Dr. Ashvini Karpe, we deliver specialized, multi-disciplinary dental care under one roof."
     }
   ]
 }
