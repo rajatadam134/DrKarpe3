@@ -5,7 +5,7 @@ const reviewsDatabase = [
     {
         name: "Vinayak Patil",
         location: "Solapur",
-        text: "Dr. Vivek Karpe did my dental implant. The treatment was absolutely painless and smooth. The clinic setup is highly professional and hygienic. Highly recommend!",
+        text: "Dr. Vivekanand Karpe did my dental implant. The treatment was absolutely painless and smooth. The clinic setup is highly professional and hygienic. Highly recommend!",
         role: "Verified Patient"
     },
     {
@@ -23,7 +23,7 @@ const reviewsDatabase = [
     {
         name: "Rajesh Patil",
         location: "Solapur",
-        text: "I had a dental implant done by Dr. Vivek Karpe. The surgery was completely painless and the results are amazing. Dr. Karpe is a true perfectionist and explains every step of the process. The clinic's hygiene standards are world-class.",
+        text: "I had a dental implant done by Dr. Vivekanand Karpe. The surgery was completely painless and the results are amazing. Dr. Karpe is a true perfectionist and explains every step of the process. The clinic's hygiene standards are world-class.",
         role: "Verified Patient"
     },
     {
@@ -35,7 +35,7 @@ const reviewsDatabase = [
     {
         name: "Amit Kulkarni",
         location: "Akkalkot",
-        text: "Visited for my root canal treatment. Dr. Vivek Karpe was very professional and efficient. He resolved my severe toothache in just one sitting. Excellent reception and post-treatment care.",
+        text: "Visited for my root canal treatment. Dr. Vivekanand Karpe was very professional and efficient. He resolved my severe toothache in just one sitting. Excellent reception and post-treatment care.",
         role: "Verified Patient"
     },
     {
@@ -59,7 +59,7 @@ const reviewsDatabase = [
     {
         name: "Vikram Salunkhe",
         location: "Akkalkot",
-        text: "I got ceramic dental crowns fitted here. The quality of work is outstanding. Dr. Vivek Karpe and his team are exceptionally skilled and caring professionals.",
+        text: "I got ceramic dental crowns fitted here. The quality of work is outstanding. Dr. Vivekanand Karpe and his team are exceptionally skilled and caring professionals.",
         role: "Verified Patient"
     },
     {

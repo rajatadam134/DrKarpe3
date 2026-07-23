@@ -54,7 +54,7 @@
         ]
       },
       "faq_implants": {
-        "text": "<strong>Dental Implants at Dr. Karpe's Clinic:</strong><br><br>👨‍⚕️ Conducted by <strong>Dr. Vivek Karpe</strong> (BDS GDC Mumbai), who has 25+ years experience and trained in Germany for the 'All-on-4' concept.<br><br>• <strong>Lifespan:</strong> Can last a lifetime with proper care.<br>• <strong>Pain:</strong> Performed under local anesthesia, virtually painless.<br>• <strong>Cost:</strong> Varies depending on material (Titanium/Zirconia) and case complexity.",
+        "text": "<strong>Dental Implants at Dr. Karpe's Clinic:</strong><br><br>👨‍⚕️ Conducted by <strong>Dr. Vivekanand Karpe</strong> (BDS GDC Mumbai), who has 25+ years experience and trained in Germany for the 'All-on-4' concept.<br><br>• <strong>Lifespan:</strong> Can last a lifetime with proper care.<br>• <strong>Pain:</strong> Performed under local anesthesia, virtually painless.<br>• <strong>Cost:</strong> Varies depending on material (Titanium/Zirconia) and case complexity.",
         "options": [
           { "text": "💬 Chat on WhatsApp for Quote", "action": "whatsapp" },
           { "text": "📅 Book Consultation", "nextKey": "booking" },
@@ -99,9 +99,9 @@
     },
     "faqs": [
       {
-        "keywords": ["doctor", "doctors", "dentist", "dentists", "specialist", "specialists", "vivek", "Ashvini", "who"],
+        "keywords": ["doctor", "doctors", "dentist", "dentists", "specialist", "specialists", "Vivekanand", "Ashvini", "who"],
         "question": "Who are the doctors at the clinic?",
-        "answer": "Our clinic is run by two highly qualified dental specialists:<br><br>👨‍⚕️ <strong>Dr. Vivek Karpe (Implantologist):</strong> BDS from GDC Mumbai with 25+ years experience. Trained in Germany for dental implants.<br><br>👩‍⚕️ <strong>Dr. Ashvini Karpe (Cosmetic Dentist):</strong> BDS from GDC Aurangabad with 20+ years experience, specializing in aesthetic smile design."
+        "answer": "Our clinic is run by two highly qualified dental specialists:<br><br>👨‍⚕️ <strong>Dr. Vivekanand Karpe (Implantologist):</strong> BDS from GDC Mumbai with 25+ years experience. Trained in Germany for dental implants.<br><br>👩‍⚕️ <strong>Dr. Ashvini Karpe (Cosmetic Dentist):</strong> BDS from GDC Aurangabad with 20+ years experience, specializing in aesthetic smile design."
       },
       {
         "keywords": ["hours", "timings", "open", "time", "schedule", "opening", "days"],
@@ -136,7 +136,7 @@
       {
         "keywords": ["all on 4", "full arch", "all-on-4", "german concept", "no teeth"],
         "question": "What is the All-on-4 implant technique?",
-        "answer": "The All-on-4 concept allows replacement of an entire arch of teeth (upper or lower) using only four strategically placed implants. Dr. Vivek Karpe trained in Germany for this procedure, enabling patients with complete tooth loss to get a fixed set of teeth quickly."
+        "answer": "The All-on-4 concept allows replacement of an entire arch of teeth (upper or lower) using only four strategically placed implants. Dr. Vivekanand Karpe trained in Germany for this procedure, enabling patients with complete tooth loss to get a fixed set of teeth quickly."
       },
       {
         "keywords": ["veneer", "veneers", "laminate", "laminates", "smile correction", "gaps"],
@@ -246,7 +246,7 @@
       {
         "keywords": ["about", "clinic history", "infrastructure", "establishment"],
         "question": "Can you tell me about the clinic's history?",
-        "answer": "Dr. Karpe's Centre for Advanced Dentistry is a premier dental healthcare facility in Solapur and Akkalkot, offering advanced diagnostics and clinical treatments. Led by Dr. Vivek Karpe and Dr. Ashvini Karpe, we deliver specialized, multi-disciplinary dental care under one roof."
+        "answer": "Dr. Karpe's Centre for Advanced Dentistry is a premier dental healthcare facility in Solapur and Akkalkot, offering advanced diagnostics and clinical treatments. Led by Dr. Vivekanand Karpe and Dr. Ashvini Karpe, we deliver specialized, multi-disciplinary dental care under one roof."
       }
     ]
   };

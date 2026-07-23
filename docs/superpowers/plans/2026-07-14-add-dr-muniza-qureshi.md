@@ -57,7 +57,7 @@ Find the team section grid row (`row justify-content-center`) containing the doc
 
 Open `about.html` around line 380:
 
-- Find Dr. Vivek Karpe's column card container:
+- Find Dr. Vivekanand Karpe's column card container:
   _Change from:_ `<div class="col-lg-5 col-md-6 col-12">`
   _To:_ `<div class="col-lg-4 col-md-6 col-12">`
 - Find Dr. Ashvini Karpe's column card container:

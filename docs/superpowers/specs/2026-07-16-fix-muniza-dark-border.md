@@ -32,7 +32,7 @@ A custom Python script will:
 3. Erode the alpha mask by 1 pixel using OpenCV (`cv2.erode`).
 4. Reapply the eroded mask to the image.
 5. Perform the same headroom scaling (height `788` pixels) and paste it bottom-aligned onto the Warm Gray canvas.
-6. Re-process Dr. Vivek and Dr. Ashvini's images as well to ensure all three have the same clean edge quality.
+6. Re-process Dr. Vivekanand and Dr. Ashvini's images as well to ensure all three have the same clean edge quality.
 
 ---
 

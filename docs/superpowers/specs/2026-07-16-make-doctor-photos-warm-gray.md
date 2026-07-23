@@ -1,6 +1,6 @@
 # Design Spec — Make Doctor Photos Warm Gray & Full-Frame Sizing
 
-This design document outlines the corrected process of extracting the subject (foreground) of the three doctor portraits (Dr. Vivek Karpe, Dr. Ashvini Karpe, and Dr. Muniza Qureshi), replacing their backgrounds with a consistent solid **Warm Gray** studio color (`#EAE7E1`), and resizing them to a uniform `682x1024` WebP format using full-frame aspect-fill to preserve the original professional framing.
+This design document outlines the corrected process of extracting the subject (foreground) of the three doctor portraits (Dr. Vivekanand Karpe, Dr. Ashvini Karpe, and Dr. Muniza Qureshi), replacing their backgrounds with a consistent solid **Warm Gray** studio color (`#EAE7E1`), and resizing them to a uniform `682x1024` WebP format using full-frame aspect-fill to preserve the original professional framing.
 
 > **Constraint:** All changes must remain local for verification. Do NOT run `git push` to upload to GitHub.
 > **Asset Constraint:** Do NOT delete the raw JPEG files from `assets/img/New_Images/` after processing. Keep them there.
@@ -25,12 +25,12 @@ This design document outlines the corrected process of extracting the subject (f
 
 A custom Python script will be created to:
 
-1. Load `assets/img/New_Images/Dr. Vivek Karpe.jpg`, `assets/img/New_Images/Dr. Ashvini Karpe.jpg`, and the original upload of Dr. Muniza.
+1. Load `assets/img/New_Images/Dr. Vivekanand Karpe.jpg`, `assets/img/New_Images/Dr. Ashvini Karpe.jpg`, and the original upload of Dr. Muniza.
 2. Run `rembg.remove` on each image to isolate the subject transparently.
 3. Fit the transparent subject to exactly `682x1024` using `ImageOps.fit` (retaining the photographer's exact framing).
 4. Create a solid Warm Gray background of `682x1024` with color `#EAE7E1`.
 5. Composite the transparent subject onto the Warm Gray background.
-6. Save the output to `assets/img/team/Dr-Vivek-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
+6. Save the output to `assets/img/team/Dr-Vivekanand-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
 
 ---
 

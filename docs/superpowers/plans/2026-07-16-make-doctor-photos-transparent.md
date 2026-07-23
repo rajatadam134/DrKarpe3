@@ -3,7 +3,7 @@
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 > **Constraint:** DO NOT run `git push`! All changes must remain local.
 
-**Goal:** Remove backgrounds from Dr. Vivek Karpe's new photo, Dr. Ashvini Karpe's new photo, and Dr. Muniza Qureshi's existing photo to make them transparent, resize them all to `682x1024`, and output them as WebP.
+**Goal:** Remove backgrounds from Dr. Vivekanand Karpe's new photo, Dr. Ashvini Karpe's new photo, and Dr. Muniza Qureshi's existing photo to make them transparent, resize them all to `682x1024`, and output them as WebP.
 
 ---
 
@@ -23,11 +23,11 @@ pip install rembg opencv-python pillow onnxruntime
 - [ ] **Step 2: Create the python script `scratch/process_portraits.py`**
       Create a python script that will:
 
-1. Load `assets/img/New_Images/Dr. Vivek Karpe.jpg`, `assets/img/New_Images/Dr. Aswini Karpe.jpg`, and the original upload of Dr. Muniza `C:\Users\rajat\.gemini\antigravity\brain\19e3c935-c574-4eb4-9584-ec6ae8fb4084\media__1784025499508.png`.
+1. Load `assets/img/New_Images/Dr. Vivekanand Karpe.jpg`, `assets/img/New_Images/Dr. Aswini Karpe.jpg`, and the original upload of Dr. Muniza `C:\Users\rajat\.gemini\antigravity\brain\19e3c935-c574-4eb4-9584-ec6ae8fb4084\media__1784025499508.png`.
 2. Run `rembg.remove` on each image to isolate the doctor.
 3. Automatically crop the bounding box of the subject.
 4. Scale/pad the image to exactly `682x1024` with transparency.
-5. Save the output to `assets/img/team/Dr-Vivek-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
+5. Save the output to `assets/img/team/Dr-Vivekanand-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
 
 ---
 
@@ -38,7 +38,7 @@ pip install rembg opencv-python pillow onnxruntime
 
 - [ ] **Step 2: Delete raw source files**
       Delete:
-- `assets/img/New_Images/Dr. Vivek Karpe.jpg`
+- `assets/img/New_Images/Dr. Vivekanand Karpe.jpg`
 - `assets/img/New_Images/Dr. Aswini Karpe.jpg`
   Keep other unrelated files in `New_Images` intact.
 

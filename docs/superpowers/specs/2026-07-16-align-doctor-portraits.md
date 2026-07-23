@@ -9,8 +9,8 @@ This design document outlines the corrected layout and cropping of the doctor po
 
 ## 1. Root Cause of Cropping Discrepancy
 
-- **Problem:** Dr. Vivek and Dr. Ashvini's faces appeared too large and zoomed-in, with their heads close to the top of the canvas, whereas Dr. Muniza's portrait had ample headroom at the top.
-- **Root Cause:** In the raw photos, Dr. Vivek and Dr. Ashvini have only 7%–8% of headroom above their heads, whereas Dr. Muniza's photo has 23% headroom. Resizing the full frames directly to `682x1024` preserved this difference, causing them to look completely mismatched.
+- **Problem:** Dr. Vivekanand and Dr. Ashvini's faces appeared too large and zoomed-in, with their heads close to the top of the canvas, whereas Dr. Muniza's portrait had ample headroom at the top.
+- **Root Cause:** In the raw photos, Dr. Vivekanand and Dr. Ashvini have only 7%–8% of headroom above their heads, whereas Dr. Muniza's photo has 23% headroom. Resizing the full frames directly to `682x1024` preserved this difference, causing them to look completely mismatched.
 
 ---
 
@@ -30,12 +30,12 @@ To make all three doctor portraits visually consistent, we will:
 
 A custom Python script will be created to:
 
-1. Load `assets/img/New_Images/Dr. Vivek Karpe.jpg`, `assets/img/New_Images/Dr. Ashvini Karpe.jpg`, and the original upload of Dr. Muniza.
+1. Load `assets/img/New_Images/Dr. Vivekanand Karpe.jpg`, `assets/img/New_Images/Dr. Ashvini Karpe.jpg`, and the original upload of Dr. Muniza.
 2. Run `rembg.remove` on each image to isolate the subject transparently.
 3. Find the tightest bounding box of the subject.
 4. Scale the bounding box cutout to a height of exactly `788` pixels.
 5. Composite the scaled subject centered horizontally on a solid Warm Gray canvas (`#EAE7E1`) of `682x1024`, pasting it at `y = 236` (bottom-aligned).
-6. Save the output to `assets/img/team/Dr-Vivek-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
+6. Save the output to `assets/img/team/Dr-Vivekanand-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
 
 ---
 

@@ -92,7 +92,7 @@ In `index.html`, replace `<span>Our Friendly</span> Dentists Team` with `<span>O
 
 In `index.html`:
 
-- Delete the `<div class="team-social-icon">...</div>` block from Doctor 1 (Dr. Vivek Karpe).
+- Delete the `<div class="team-social-icon">...</div>` block from Doctor 1 (Dr. Vivekanand Karpe).
 - Delete the `<div class="team-social-icon">...</div>` block from Doctor 2 (Dr. Ashvini Karpe).
 
 ---

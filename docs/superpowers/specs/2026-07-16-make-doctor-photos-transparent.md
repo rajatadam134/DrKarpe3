@@ -1,6 +1,6 @@
 # Design Spec — Make Doctor Photos Transparent & Resized
 
-This design document outlines the process of extracting the subject (foreground) of the three doctor portraits (Dr. Vivek Karpe, Dr. Ashvini Karpe, and Dr. Muniza Qureshi), making their backgrounds transparent, and resizing them to a uniform `682x1024` WebP format.
+This design document outlines the process of extracting the subject (foreground) of the three doctor portraits (Dr. Vivekanand Karpe, Dr. Ashvini Karpe, and Dr. Muniza Qureshi), making their backgrounds transparent, and resizing them to a uniform `682x1024` WebP format.
 
 > **Constraint:** All changes must remain local for verification. Do NOT run `git push` to upload to GitHub.
 
@@ -8,9 +8,9 @@ This design document outlines the process of extracting the subject (foreground)
 
 ## 1. Image Sources & Destinations
 
-- **Dr. Vivek Karpe (New Photo):**
-  - Source: `assets/img/New_Images/Dr. Vivek Karpe.jpg`
-  - Destination: `assets/img/team/Dr-Vivek-Karpe.webp`
+- **Dr. Vivekanand Karpe (New Photo):**
+  - Source: `assets/img/New_Images/Dr. Vivekanand Karpe.jpg`
+  - Destination: `assets/img/team/Dr-Vivekanand-Karpe.webp`
 - **Dr. Ashvini Karpe (New Photo):**
   - Source: `assets/img/New_Images/Dr. Aswini Karpe.jpg`
   - Destination: `assets/img/team/Dr-Ashvini-Karpe.webp`

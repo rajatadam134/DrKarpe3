@@ -17,14 +17,14 @@
 - [ ] **Step 1: Create the python script `scratch/process_portraits_aligned_v2.py`**
       Create a python script that will:
 
-1. Load `assets/img/New_Images/Dr. Vivek Karpe.jpg`, `assets/img/New_Images/Dr. Ashvini Karpe.jpg`, and the original upload of Dr. Muniza.
+1. Load `assets/img/New_Images/Dr. Vivekanand Karpe.jpg`, `assets/img/New_Images/Dr. Ashvini Karpe.jpg`, and the original upload of Dr. Muniza.
 2. Run `rembg.remove` with **`alpha_matting=True`** on each image to isolate the subject.
 3. Extract the alpha channel and apply a 1-pixel erosion using `cv2.erode` with a `3x3` rectangular kernel.
 4. Crop the transparent subject to its eroded bounding box.
 5. Scale the cutout to exactly `788` pixels tall.
 6. Create a solid background image of `682x1024` with color `#EAE7E1` (RGB: `234, 231, 225`).
 7. Paste the scaled transparent subject centered horizontally on the Warm Gray background, bottom-aligned (`paste_y = 1024 - 788 = 236`).
-8. Save the output to `assets/img/team/Dr-Vivek-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
+8. Save the output to `assets/img/team/Dr-Vivekanand-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
 
 - [ ] **Step 2: Run the python processing script**
       Run `python scratch/process_portraits_aligned_v2.py` and verify successful output logs.

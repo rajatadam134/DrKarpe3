@@ -17,13 +17,13 @@
 - [ ] **Step 1: Create the python script `scratch/process_portraits_aligned.py`**
       Create a python script that will:
 
-1. Load `assets/img/New_Images/Dr. Vivek Karpe.jpg`, `assets/img/New_Images/Dr. Ashvini Karpe.jpg`, and the original upload of Dr. Muniza.
+1. Load `assets/img/New_Images/Dr. Vivekanand Karpe.jpg`, `assets/img/New_Images/Dr. Ashvini Karpe.jpg`, and the original upload of Dr. Muniza.
 2. Run `rembg.remove` on each image to isolate the subject transparently.
 3. Crop the transparent subject to its tightest bounding box.
 4. Scale the cropped subject to a height of exactly `788` pixels.
 5. Create a solid background image of `682x1024` with color `#EAE7E1` (RGB: `234, 231, 225`).
 6. Paste the scaled transparent subject centered horizontally on the Warm Gray background, bottom-aligned (`paste_y = 1024 - 788 = 236`).
-7. Save the output to `assets/img/team/Dr-Vivek-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
+7. Save the output to `assets/img/team/Dr-Vivekanand-Karpe.webp`, `assets/img/team/Dr-Ashvini-Karpe.webp`, and `assets/img/team/Dr-Muniza-Qureshi.webp`.
 
 - [ ] **Step 2: Run the python processing script**
       Run `python scratch/process_portraits_aligned.py` and check logs.
