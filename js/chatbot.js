@@ -270,7 +270,7 @@
     });
 
   // WhatsApp Configuration
-  const whatsappPhone = "+918767223224"; // Tested phone number
+  const whatsappPhone = "+919405549094"; // Clinic WhatsApp number
   const whatsappBaseUrl = "https://wa.me/" + whatsappPhone + "?text=";
 
   // --- FUZZY SEARCH MATCHING LOGIC ---

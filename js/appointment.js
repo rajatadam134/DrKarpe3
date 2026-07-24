@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const treatmentText = treatmentSelect.options[treatmentSelect.selectedIndex].text;
 
       // Define WhatsApp numbers (Format: country code + number, no +, no spaces)
-      const whatsappNumber = '918767223224'; 
+      const whatsappNumber = '919405549094'; 
       const branchName = branchVal === 'solapur' ? 'Solapur Main Branch' : 'Akkalkot Branch';
 
       // Format the WhatsApp message (using bold markdown *text*)
@@ -72,7 +72,7 @@ _Submitted via website form_`;
       const email = campForm.querySelector('#camp-email').value;
       const phone = campForm.querySelector('#camp-phone').value;
 
-      const whatsappNumber = '918767223224';
+      const whatsappNumber = '919405549094';
 
       const messageText = 
 `*Dental Camp Request*
